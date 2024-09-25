@@ -1,0 +1,25 @@
+/* You can add global styles to this file, and also import other style files */
+/* firago-latin-400-normal */
+@font-face {
+    font-family: 'FiraGO';
+    font-style: normal;
+    font-display: swap;
+    font-weight: 400;
+    src: url(https://cdn.jsdelivr.net/fontsource/fonts/firago@latest/latin-400-normal.woff2) format('woff2');
+  }
+  
+  /* firago-latin-500-normal */
+  @font-face {
+    font-family: 'FiraGO';
+    font-style: normal;
+    font-display: swap;
+    font-weight: 500;
+    src: url(https://cdn.jsdelivr.net/fontsource/fonts/firago@latest/latin-500-normal.woff2) format('woff2');
+  }
+
+* {
+    font-family: 'FiraGO', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}

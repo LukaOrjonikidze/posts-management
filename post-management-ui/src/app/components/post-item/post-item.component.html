@@ -1,0 +1,13 @@
+<div class="post-item">
+    <div class="post-item__image">
+        <img class="pfp" [src]="'data:image/png;base64, ' + post.image" alt="Post Image" />
+    </div>
+    <div class="post-item__content">
+        <h2>{{ post.title }}</h2>
+    </div>
+    <div class="post-item__actions">
+        <button class="btn btn-primary" (click)="details.emit(post.id)">📊</button>
+        <button *ngIf="authService.isAuthenticated()" class="btn btn-secondary" (click)="edit.emit(post.id)">✏️</button>
+        <button *ngIf="authService.isAuthenticated()" class="btn btn-danger" (click)="delete.emit(post.id)">🗑️</button>
+    </div>
+</div>

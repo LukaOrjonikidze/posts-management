@@ -1,0 +1,109 @@
+.post-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.post-container h2 {
+  text-align: center;
+  margin-bottom: 24px;
+  font-size: 1.75em;
+  color: #333;
+}
+
+.post-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.post-container .form-group {
+  margin-bottom: 16px;
+}
+
+.post-container form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #555;
+}
+
+.post-container form input,
+.post-container form textarea {
+  width: 100%;
+  padding: 12px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.post-container form button {
+  padding: 12px 20px;
+  font-size: 1em;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #3c444c;
+  color: white;
+  transition: background-color 0.3s;
+}
+
+.post-container form button:hover {
+  background-color: #3c444c;
+}
+
+.post-container .image-preview {
+  margin-top: 16px;
+  text-align: center;
+}
+
+.post-container .image-preview img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.post-container .view-mode {
+  text-align: center;
+}
+
+.post-container .view-mode h3 {
+  font-size: 1.5em;
+  margin-bottom: 16px;
+  color: #333;
+}
+
+.post-container .view-mode p {
+  margin: 8px 0;
+  color: #666;
+}
+
+.post-container .view-mode img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 16px;
+}
+
+.back-button {
+  display: block;
+  margin: 20px auto 0;
+  padding: 10px 20px;
+  font-size: 1em;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #6c757d;
+  color: white;
+  transition: background-color 0.3s;
+}
+
+.back-button:hover {
+  background-color: #5a6268;
+}

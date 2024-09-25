@@ -1,0 +1,11 @@
+<div class="auth-buttons">
+    <ng-container *ngIf="!authService.isAuthenticated(); else loggedIn">
+      <button (click)="navigateTo('')">Home</button>
+      <button (click)="navigateTo('login')">Login</button>
+      <button (click)="navigateTo('register')">Register</button>
+    </ng-container>
+    <ng-template #loggedIn>
+      <button (click)="logout()">Logout</button>
+    </ng-template>
+  </div>
+  <router-outlet></router-outlet>

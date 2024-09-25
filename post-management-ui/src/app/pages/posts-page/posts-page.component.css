@@ -1,0 +1,51 @@
+.posts {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.posts__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.posts__header h1 {
+  margin: 0;
+  font-size: 2em;
+  color: #333;
+}
+
+.posts__header .add-btn {
+  padding: 10px 20px;
+  background-color: #3c444c;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.posts__header .add-btn:hover {
+  background-color: #218838;
+}
+
+.posts__search {
+  margin-bottom: 20px;
+}
+
+.posts__search input {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.posts__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}

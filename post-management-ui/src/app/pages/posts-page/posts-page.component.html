@@ -1,0 +1,18 @@
+<div class="posts">
+    <div class="posts__header">
+        <h1>Posts</h1>
+        <button *ngIf="authService.isAuthenticated()" class="btn btn-primary add-btn" (click)="addPost()">Add Post</button>
+    </div>
+    <div class="posts__search">
+        <input type="text" placeholder="Search..." (input)="searchPosts($event)" />
+    </div>
+    <div class="posts__list">
+        <app-post-item
+            *ngFor="let post of posts"
+            [post]="post"
+            (details)="onDetails($event)"
+            (edit)="onEdit($event)"
+            (delete)="onDelete($event)"
+        ></app-post-item>
+    </div>
+</div>

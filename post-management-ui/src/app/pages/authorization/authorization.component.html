@@ -1,0 +1,18 @@
+<div class="auth-container">
+  <h2>{{ isRegister ? 'Register' : 'Login' }}</h2>
+  <form [formGroup]="authForm" (ngSubmit)="onSubmit()">
+    <div>
+      <label for="username">Username</label>
+      <input id="username" formControlName="username" type="text" />
+    </div>
+    <div *ngIf="isRegister">
+      <label for="email">Email</label>
+      <input id="email" formControlName="email" type="email" />
+    </div>
+    <div>
+      <label for="password">Password</label>
+      <input id="password" formControlName="password" type="password" />
+    </div>
+    <button type="submit">{{ isRegister ? 'Register' : 'Login' }}</button>
+  </form>
+</div>
